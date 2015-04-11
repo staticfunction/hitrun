@@ -1,6 +1,6 @@
 {
-  "name": "kola-starter",
-  "version": "1.0.0",
+  "name": "hitrun",
+  "version": "0.0.0-alpha-1",
   "description": "Boilerplate code to allow you to code with Kola in no time!",
   "main": "dist/index.html",
   "directories": {

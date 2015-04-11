@@ -1,4 +1,4 @@
-# Kola Starter App
+# Hitrun
 This is a boilerplate project to start developing with Kola
 
 ## Prerequisites

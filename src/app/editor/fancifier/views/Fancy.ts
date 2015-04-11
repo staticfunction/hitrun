@@ -1,15 +1,13 @@
-class GreeterView {
+class Fancy {
 
     rootNodes: HTMLElement[];
     parent: HTMLElement;
-    msg: HTMLParagraphElement;
+    output: HTMLPreElement;
 
     constructor() {
         this.rootNodes = [];
-        this.msg = document.createElement('p');
-        var n1 = document.createTextNode('Mabuhay Kola!');
-        this.rootNodes.push(this.msg);
-        this.msg.appendChild(n1);
+        this.output = document.createElement('pre');
+        this.rootNodes.push(this.output);
     }
 
     appendTo(parent:HTMLElement): void {
@@ -29,4 +27,4 @@ class GreeterView {
     }
 }
 
-export = GreeterView;
+export = Fancy;

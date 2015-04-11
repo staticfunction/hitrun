@@ -5,7 +5,7 @@ html, body {
     height: 100%;
 }
 
-.editor .raw {
+textarea.editor {
     word-wrap: normal;
     white-space: pre;
     overflow: scroll;
@@ -17,30 +17,6 @@ html, body {
     right: 0;
     bottom: 0;
     width: 80%;
-    z-index: 1;
-}
-
-.editor .formatted {
-    word-wrap: normal;
-    white-space: pre;
-    overflow: scroll;
-    color: #ffffff;
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 20%;
-    right: 0;
-    bottom: 0;
-    width: 80%;
-    z-index: 0;
-}
-
-.keyword {
-    color: deeppink;
-}
-
-.logical {
-    color: orange;
 }
 
 #main {
@@ -49,8 +25,4 @@ html, body {
     margin: 0;
     position: relative;
     background: #1f1f1f;
-}
-
-div.formatter {
-
 }

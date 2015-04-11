@@ -64,15 +64,12 @@ gulp.task('run', ['bundle'], function() {
         }))
 })
 
-gulp.task('release', ['build'], function() {
-    getBundler().bundle()
-    .pipe(source('app.js'))
-    .pipe(buffer())
-    .pipe(uglify())
-    .pipe(gulp.dest('bin-release'))
+gulp.task('dist', ['bundle'], function() {
+    gulp.src('bundle/**')
+        .pipe(gulp.dest('dist'))
 })
 
 
-gulp.task('auto', ['bundle'], function() {
+gulp.task('auto', ['run'], function() {
     gulp.watch(['src/**'], ['bundle']);
 })
